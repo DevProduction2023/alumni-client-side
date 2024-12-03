@@ -24,8 +24,8 @@ export default function Login() {
             });
               if (userdata.data.user.role === "Admin") {
                 localStorage.setItem('user', JSON.stringify(userdata.data));
-                navigate('/admin');
                  window.location.reload();
+                navigate('/admin');
             } else {
                 localStorage.setItem('user', JSON.stringify(userdata.data));
                 navigate('/user')
