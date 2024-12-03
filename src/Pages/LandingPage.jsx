@@ -1,13 +1,16 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { RiLockPasswordFill } from "react-icons/ri";
 import { FaFemale, FaHandHoldingHeart, FaSearch } from "react-icons/fa";
 import { MdVerifiedUser } from "react-icons/md";
 import Navbar from "../Layouts/UserNavbar";
 
 const LandingPage = () => {
+  const [ref, setRef] = useState(false);
   useEffect(() => {
-    // Force the page to reload
+    if(ref === "false){
     window.location.reload();
+  }
+  setRef(true);
   }, []);
 
   return (
