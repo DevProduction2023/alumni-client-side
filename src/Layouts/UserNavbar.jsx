@@ -27,7 +27,8 @@ function Navbar({ logourl}) {
       toast.success(response?.message,{
         position: "top-center",
         autoClose:2000,
-      })
+      });
+       window.location.reload();
       navigate('/')
     }
    else if(response?.status >= 400){
