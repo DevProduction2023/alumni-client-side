@@ -13,6 +13,7 @@ const Fetch = async ({ email, password }) => {
    if (!response.ok) {
         const data = await response.json();
         localStorage.setItem('user', JSON.stringify(data?.data));
+        localData = data?.data
         return { response: await response.json(), status: response.status, statusText: response.statusText };
     }
     return response.json();
