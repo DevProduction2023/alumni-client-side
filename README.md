@@ -1,52 +1,107 @@
-1. Introduction
-Project Name: Alumni-Connect-Briging-Future
-Project Description:
-This project is an "Alumni Connect" platform designed to facilitate interaction between alumni and students. It includes features for job postings, alumni search, and user role-based access control (RBAC).
+# Alumni-Connect-Bridging-Future
 
-Position: Frontend Developer.
+## Project Description
+**Alumni Connect** is a platform designed to facilitate interaction between alumni and students, providing features like job postings, alumni search, and user role-based access control (RBAC). The platform allows users to access functionalities based on their roles, such as Admin, Alumni, and Student.
 
-Responsibilities:
-Developed the RBAC UI to ensure appropriate access levels for Admins, Alumni, and Students.
-Implemented dynamic components for  managing user roles, job posting approvals.
-Ensured responsive design and cross-browser compatibility using TailwindCSS.
-Integrated API calls with backend endpoints for seamless role-based functionalities.
+## Position: Frontend Developer
 
-4. Key Features of the RBAC UI
-Role-Based Views:
-Admin:
-This project is for College students which is managend by a Admin who can only create users like college students only can access this web application via email and password whcich college provide them after their registration.
-Jobs-post: Admin and Alumni can post jobs and only they can be deleted by job poster admin can active and inactive a job post. An inActive job post will invisible to students.
-Alumni: Post and manage job opportunities, view students.
-Students: Access job postings and search alumni profiles.
+### Responsibilities:
+- Developed the **RBAC UI** to ensure appropriate access levels for Admins, Alumni, and Students.
+- Implemented dynamic components for managing user roles and job posting approvals.
+- Ensured **responsive design** and **cross-browser compatibility** using **TailwindCSS**.
+- Integrated **API calls** with backend endpoints for seamless role-based functionalities.
 
-Dynamic Role Assignment:
-Admin: admin can change role of any users and can update thier details also.
-Secure Authentication:
-Managed through JWT Token and Using Database MongoDB-atlas for this project.
+---
 
-6. Accessing the Project
-Repository Link: https://github.com/DevProduction2023/alumni-client-side
-Live Deployment Link: https://alumni-client-side-a160vh9il-shivs-projects-0bdf001e.vercel.app
+## Key Features of the RBAC UI
 
-Access Login Details for Roles:
-Admin: admin@gmail.com   / Pass@1234
-///* refresh requierd after each login aspect admin their some bug needed to be fixed *///
-///* working locally but their some bug at deployment time *///
-Alumni: create and login / refresh required after login
-Student: create and login / refresh required after login
+### 1. **Role-Based Views:**
 
-8. Testing the RBAC UI
-Admin Panel:
-Log in as an Admin and test role management features.
-Approve/delete a job posting.
-Create a users and update thier role and details and can access this by login via details.
+- **Admin**:
+  - Admin is the superuser who manages the entire platform. Only admins can create and manage users (students) who access the platform with their college-provided email and password.
+  - **Job Postings**: Admin and Alumni can post jobs. However, only the job poster (Admin or Alumni) can delete a job post. Admin has the ability to **activate** and **deactivate** job posts, which determines visibility to students.
 
-Alumni Panel:
-Post a new job opportunity and edit or delete existing ones.
+- **Alumni**:
+  - Post and manage job opportunities.
+  - View and interact with student profiles.
 
-Student Panel:
-Search for alumni and view job postings.
+- **Students**:
+  - Access job postings.
+  - Search alumni profiles.
 
-Expected Behavior:
-Each role should only have access to its permitted features.
+### 2. **Dynamic Role Assignment**:
+- Admin can change the role of any user and update their details.
 
+### 3. **Secure Authentication**:
+- Authentication is managed via **JWT tokens**.
+- The database used is **MongoDB Atlas** for storing user data.
+
+---
+
+## Accessing the Project
+
+- **Repository Link**: [Alumni-Connect-Client-Side GitHub](https://github.com/DevProduction2023/alumni-client-side)
+- **Live Deployment**: [Alumni Connect Platform](https://alumni-client-side-a160vh9il-shivs-projects-0bdf001e.vercel.app)
+
+### Access Login Details for Roles:
+
+- **Admin**:  
+  Email: `admin@gmail.com`  
+  Password: `Pass@1234`  
+  _Note: A refresh is required after login. There is a bug that needs fixing on the deployment._
+
+- **Alumni**:  
+  Create and login  
+  _Note: A refresh is required after login._
+
+- **Student**:  
+  Create and login  
+  _Note: A refresh is required after login._
+
+---
+
+## Testing the RBAC UI
+
+### **Admin Panel**:
+1. Log in as an Admin.
+2. Test **role management** features.
+3. Approve or delete a job posting.
+4. Create users and update their role and details.
+5. Test login functionality with the created admin users.
+
+### **Alumni Panel**:
+1. Post a new job opportunity.
+2. Edit or delete existing job postings.
+
+### **Student Panel**:
+1. Search for alumni profiles.
+2. View job postings.
+
+### **Expected Behavior**:
+- Each role should only have access to its permitted features.
+  - Admins can manage users and job posts.
+  - Alumni can post and manage jobs.
+  - Students can only view job postings and search for alumni profiles.
+
+---
+
+## Bugs and Known Issues:
+- **Refresh required after each login** for Admin, Alumni, and Student roles.  
+  _This bug is present in the deployed version but works correctly locally._
+
+---
+
+## Technologies Used:
+- **Frontend**: React, TailwindCSS
+- **Backend**: MongoDB Atlas (for storing data), JWT Authentication
+- **Deployment**: Vercel (for live deployment)
+
+---
+
+## Contributing
+
+Feel free to fork this project and contribute to improvements. If you encounter any bugs or have suggestions, please open an issue or submit a pull request.
+
+---
+
+### 2024 © Copyright Reserved
