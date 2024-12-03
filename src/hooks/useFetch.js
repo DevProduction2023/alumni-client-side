@@ -224,7 +224,6 @@ const logOut = async () => {
         credentials: "include"
     });
     if (!response.ok) {
-        localStorage.setItem("user", "")
         return { response: await response.json(), status: response.status, statusText: response.statusText };
     }
     return response.json();
