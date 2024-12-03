@@ -5,14 +5,6 @@ import { MdVerifiedUser } from "react-icons/md";
 import Navbar from "../Layouts/UserNavbar";
 
 const LandingPage = () => {
-  const [ref, setRef] = useState(false);
-  useEffect(() => {
-    if(ref === false){
-    window.location.reload();
-  }
-  setRef(true);
-  }, []);
-
   return (
     <>
       <nav className="w-full sticky top-0 z-10">
