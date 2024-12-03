@@ -103,5 +103,4 @@
 Feel free to fork this project and contribute to improvements. If you encounter any bugs or have suggestions, please open an issue or submit a pull request.
 
 ---
-
-### 2024 © Copyright Reserved
+### **Build Date: April 2024**
