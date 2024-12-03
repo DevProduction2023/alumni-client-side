@@ -31,6 +31,7 @@ function AdminNavbar({User}) {
             autoClose:2000,
           })
           localStorage.clear();
+            window.location.reload();
           navigate('/')
         }
         else{
