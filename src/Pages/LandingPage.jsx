@@ -7,7 +7,7 @@ import Navbar from "../Layouts/UserNavbar";
 const LandingPage = () => {
   const [ref, setRef] = useState(false);
   useEffect(() => {
-    if(ref === "false){
+    if(ref === false){
     window.location.reload();
   }
   setRef(true);
