@@ -28,7 +28,6 @@ function Navbar({ logourl}) {
         position: "top-center",
         autoClose:2000,
       });
-       window.location.reload();
       navigate('/')
     }
    else if(response?.status >= 400){
